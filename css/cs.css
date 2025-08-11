@@ -1,0 +1,17 @@
+.cs {
+  width: 100%;
+}
+.cs-inner {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+.cs-inner h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+.cs-inner li a span{
+    color: #999;
+    font-size: 13px;
+}
