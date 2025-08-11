@@ -1,3 +1,38 @@
-.visual{
-    width: 100%;
+.visual {
+  width: 100%;
+}
+.visual a {
+  width: 100%;
+}
+.visual a img {
+  width: 100%;
+}
+/* 주문버튼 */
+.orderBtn {
+  width: 600px;
+  display: flex;
+}
+.orderBtn li {
+  width: 300px;
+  padding: 27px 0;
+  background-color: #009223;
+  border-radius: 0 0 30px 0;
+}
+.orderBtn li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 22px;
+  color: aliceblue;
+}
+.orderBtn li:nth-child(1){
+    background-color: #FFCE32;
+    border-radius: 30px 0 0 0;
+}
+.orderBtn li:nth-child(1) > a > img {
+  width: 37px;
+}
+.orderBtn li:nth-child(2) > a > img {
+  width: 47px;
 }

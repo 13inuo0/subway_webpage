@@ -1,8 +1,9 @@
+/* 비주얼 (배너) */
 .header{
     border-top: 5px solid #009223;
 }
 .header-inner{
-    width: calc(100% - 750px);
+    width: calc(100vw - 750px);
     margin: auto;
 }
 .logo{
@@ -11,10 +12,15 @@
     margin: 30px 0;
 }
 .header-menu{
+    width: 100%;
+}
+.header-menubar{
     display: flex;
     gap: 90px;
-    width: calc(165px * 6px);
+    width: 100%;
     justify-content: center;
     padding: 22px 0;
 }
-/* 주문버튼 */
+/* .header-menu>li{
+    width: 165px;
+} */
