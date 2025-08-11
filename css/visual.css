@@ -1,14 +1,19 @@
 .visual {
+  position: relative;
   width: 100%;
 }
 .visual a {
   width: 100%;
 }
 .visual a img {
+  display: block;
   width: 100%;
 }
 /* 주문버튼 */
 .orderBtn {
+  position: absolute;
+  bottom: -70px;
+  right: 375px;
   width: 600px;
   display: flex;
 }
