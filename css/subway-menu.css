@@ -1,0 +1,58 @@
+.subway-menu {
+  width: 100%;
+display: flex;
+justify-content: center;
+margin: 130px 0;
+}
+.subway-menu-inner {
+  width: calc(100% - 30%);
+}
+/* 메뉴 상단 */
+.menu-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 130px; */
+}
+.menu-top h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.subway-menus {
+  display: flex;
+  align-items: flex-end;
+}
+.subway-menus {
+  display: flex;
+  gap: 15px;
+}
+.subway-menus li a {
+  font-size: 16px;
+}
+/* 메뉴 하단 */
+.menu-bottom{
+    margin-top: 30px;
+}
+.menu-bottom ul {
+  display: flex;
+  gap: 35px;
+}
+.menu-bottom ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: calc((100% - 1040px) / 4);
+  margin: auto;
+}
+.menu-bottom h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu-bottom p {
+  font-size: 13px;
+  color: #999;
+}
+.menu-bottom img {
+  width: 260px;
+}

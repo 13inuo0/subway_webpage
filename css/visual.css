@@ -12,9 +12,12 @@
 /* 주문버튼 */
 .orderBtn {
   position: absolute;
-  bottom: -70px;
-  right: 375px;
+  /* bottom: -70px;
+  right: 375px; */
+  bottom: -16%;
+  right: 20%;
   width: 600px;
+  /* width: 30%; */
   display: flex;
 }
 .orderBtn li {

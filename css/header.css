@@ -1,15 +1,12 @@
 /* 비주얼 (배너) */
 .header{
     border-top: 5px solid #009223;
-}
-.header-inner{
-    width: calc(100vw - 750px);
     margin: auto;
 }
 .logo{
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 .header-menu{
     width: 100%;
@@ -19,7 +16,11 @@
     gap: 90px;
     width: 100%;
     justify-content: center;
-    padding: 22px 0;
+    padding-bottom: 25px;
+}
+.header-menubar li a{
+    font-size: 18px;
+    font-weight: bold;
 }
 /* .header-menu>li{
     width: 165px;
