@@ -12,21 +12,42 @@
 }
 .news01 {
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+/* 이미지 너비 값 */
+.news01-left{
+  width: 20%;
+}
+.news01-right{
+  width: 40%;
 }
 .news02 {
   display: flex;
-  gap: 30px;
+  gap: 1.5%;
+     /* height: 20vw; */
+  /* padding: 0 3% 0 0; */
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  /* background-color: aquamarine; */
 }
 .whats-new {
-  width: 870px;
-  height: 300px;
+  width: 40%;
+   /* height: 100%; */
   border-radius: 30px 0 30px 0;
   background-color: #fff;
 }
 .news-img {
-  width: 270px;
-  height: 300px;
+  overflow: hidden;
+  width: 15%;
+  /* height: 300px; */
+   /* height: 100%; */
   border-radius: 30px 0 30px 0;
-  background: url(../images/imgi_24_270X300_drama2_M-02_staffcredit_subway20250205043905216.jpg);
+  margin-right: 3%;
   background-color: #fff;
+}
+.news-img img{
+  width: 100%;
+  display: block;
 }

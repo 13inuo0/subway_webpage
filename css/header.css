@@ -1,5 +1,6 @@
 /* 비주얼 (배너) */
 .header{
+    width: 100%;
     border-top: 5px solid #009223;
     margin: auto;
 }

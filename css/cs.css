@@ -2,16 +2,47 @@
   width: 100%;
 }
 .cs-inner {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+}
+.cs-inner h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.cs-inner li {
     display: flex;
-    gap: 30px;
-    padding: 40px;
-    justify-content: center;
+  width: calc(100% / 4);
+  position: relative;
+  align-items: center;
 }
-.cs-inner h3{
-    font-size: 16px;
-    font-weight: bold;
+.cs-inner li a{
+    display: flex;
+    gap: 20px;
 }
-.cs-inner li a span{
-    color: #999;
-    font-size: 13px;
+.cs-inner li a span {
+  color: #999;
+  font-size: 13px;
+}
+.icon {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/imgi_34_icon_quickmenu.png) no-repeat;
+  background-position: 0px 0;
+}
+.cs-inner li:nth-child(2) a .icon{
+    background-position: -70px 0;
+}
+.cs-inner li:nth-child(3) a .icon{
+    background-position: -140px 0;
+}
+.cs-inner li:nth-child(3) a .icon{
+    background-position: -210px 0;
+}
+.icon-text{
+    margin: auto;
 }
