@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>서브웨이 반응형 웹디자인</title>
+    <!-- cs연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- js연결 -->
+    <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 폰트어썸 연결 -->
+    <!-- Head 안에 추가 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -31,16 +47,34 @@
       </header>
       <!-- 비주얼 (배너) -->
       <div class="visual">
-        <a href="#"><img src="images/banner (1).jpg" alt="광고배너" /></a>
+        <div class="swiper banner-swiper">
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="images/banner (1).jpg" alt="광고배너" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/banner (2).jpg" alt="광고배너" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/banner (3).jpg" alt="광고배너" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/banner (4).jpg" alt="광고배너" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="images/banner (5).jpg" alt="광고배너" /></a>
+            </div>
+          </div>
+        </div>
         <!-- 주문버튼 -->
         <ul class="orderBtn">
           <li>
-            <a href="#"
-              >
+            <a href="#">
               <img src="images/icon_map.png" alt="돋보기" />
-              <span
-                >매장찾기</span
-              ></a
+              <span>매장찾기</span></a
             >
           </li>
           <li>
@@ -64,58 +98,91 @@
               <li><a href="#">아침메뉴</a></li>
             </ul>
           </div>
-          <div class="menu-bottom">
-            <ul>
-              <li>
-                <a href="#"
-                  ><img
-                    src="images/imgi_7_sandwich_cl06_01.jpg"
-                    alt="에그마요"
-                  />
-                  <h2>에그마요</h2>
+          <div class="swiper food-menu">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="zoom-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="hover-menu">
+                    <img
+                      src="images/imgi_7_sandwich_cl06_01.jpg"
+                      alt="에그마요"
+                    />
+                    <h2>에그마요</h2>
+                  </div>
                   <p>
                     부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운
                     스테디셀러
-                  </p></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="images/imgi_8_sandwich_cl01_01.jpg"
-                    alt="이탈리안 비엘티"
-                  />
-                  <h2>이탈리안 비엘티</h2>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="zoom-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="hover-menu">
+                    <div class="san-img"><img
+                      src="images/imgi_8_sandwich_cl01_01.jpg"
+                      alt="이탈리안 비엘티"
+                    /></div>
+                    <h2>이탈리안 비엘티</h2>
+                  </div>
                   <p>
                     페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화!
                     전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest
                     Tastiest, its’ B.M.T!
-                  </p></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="images/imgi_9_sandwich_cl02_01.jpg" alt="비엘티" />
-                  <h2>비엘티</h2>
-                  <p>
-                    오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로
-                  </p></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="images/imgi_10_sandwich_cl04_01.jpg"
-                    alt="에그마요"
-                  />
-                  <h2>햄</h2>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="zoom-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="hover-menu">
+                    <img
+                      src="images/imgi_9_sandwich_cl02_01.jpg"
+                      alt="비엘티"
+                    />
+                    <h2>비엘티</h2>
+                  </div>
+                  <p>오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="zoom-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="hover-menu">
+                    <img src="images/imgi_10_sandwich_cl04_01.jpg" alt="햄" />
+                    <h2>햄</h2>
+                  </div>
                   <p>
                     기본 중에 기본! 풍부한 햄이 만들어내는 입 안 가득 넘치는
                     맛의 향연
-                  </p></a
-                >
-              </li>
-            </ul>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="zoom-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="hover-menu">
+                    <img src="images/imgi_11_sandwich_cl05_01.jpg" alt="참치" />
+                    <h2>참치</h2>
+                  </div>
+                  <p>
+                    남녀노소 누구나 좋아하는 담백한 참치와 고소한 마요네즈의
+                    완벽한 조화
+                  </p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
