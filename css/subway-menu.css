@@ -2,14 +2,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 130px 0;
+  margin: 100px 0;
 }
 .subway-menu-inner {
-  width: calc(100% - 30%);
+  width: 100%;
 }
 /* 메뉴 상단 */
 .menu-top {
-  width: 100%;
+  width: 60%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   /* margin-top: 130px; */
@@ -30,8 +31,11 @@
   z-index: -10;
 }
 .subway-menus {
+  width: 40%;
+  /* background-color: red; */
   display: flex;
   align-items: flex-end;
+  justify-content: end;
   gap: 40px;
 }
 .subway-menus li a {
@@ -48,6 +52,9 @@
   position: absolute;
   bottom: 3px;
   right: -20px;
+}
+.subway-menus > li:last-child > a::after{
+  display: none;
 }
 .subway-menus > li > a:hover {
   color: #009223;
@@ -82,12 +89,16 @@
 } */
 
 /* 샌드위치 메뉴 스와이퍼 */
+/* .subway-menus{
+  margin: 100px;
+} */
 .food-menu {
   position: relative;
   width: 80%;
   max-width: 1500px;
+  margin-top: 50px;
 }
-.food-sw-warpper {
+.swiper-warpper {
   display: flex;
   width: 100%;
 }

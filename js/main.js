@@ -15,9 +15,10 @@ window.addEventListener("load", function () {
     },
   });
   const itemSwiper = new Swiper(".food-menu", {
-          navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"},
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     // loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
@@ -32,5 +33,16 @@ window.addEventListener("load", function () {
         slidesPerView: 4,
       },
     },
+  });
+  
+    // nav에 마우스 엔터 했을때 즉 호버했을때
+  const headerMenu = document.querySelector(".header-menu");
+  const headerBg = document.querySelector(".header-bg");
+  nav.addEventListener("mouseenter", function () {
+    headerBg.style.height = "400px";
+  });
+   // nav에 마우스 리브 했을때 즉 호버를 안했을때
+   nav.addEventListener("mouseleave", function () {
+    headerBg.style.height = "0px";
   });
 });
