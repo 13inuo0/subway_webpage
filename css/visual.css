@@ -71,6 +71,7 @@ left: -30% !important;
 }
 .orderBtn > img {
   width: 100%;
+  max-width: 24px;
 }
 .orderBtn span {
   font-size: 80%;

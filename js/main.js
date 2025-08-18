@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+  // 배너 스와이퍼
   const visualSwiper = new Swiper(".banner-swiper", {
     autoplay: {
       delay: 2500,
@@ -14,6 +15,7 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  // 샌드위치 메뉴 스와이퍼
   const itemSwiper = new Swiper(".food-menu", {
     navigation: {
       nextEl: ".swiper-button-next",
@@ -38,11 +40,11 @@ window.addEventListener("load", function () {
     // nav에 마우스 엔터 했을때 즉 호버했을때
   const headerMenu = document.querySelector(".header-menu");
   const headerBg = document.querySelector(".header-bg");
-  nav.addEventListener("mouseenter", function () {
+  headerMenu.addEventListener("mouseenter", function () {
     headerBg.style.height = "400px";
   });
    // nav에 마우스 리브 했을때 즉 호버를 안했을때
-   nav.addEventListener("mouseleave", function () {
+   headerMenu.addEventListener("mouseleave", function () {
     headerBg.style.height = "0px";
   });
 });
